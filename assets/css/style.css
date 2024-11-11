@@ -40,7 +40,7 @@ strong{
 }
 /*Modal*/
 .modal-container {
-	display: none;
+	display: flex;
 	color: white;
 	height: 100vh;
 	width: 100vw;
@@ -135,7 +135,7 @@ strong{
 /*section*/
 .main{
 	box-sizing: border-box;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
