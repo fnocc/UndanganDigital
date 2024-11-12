@@ -1,21 +1,35 @@
+// URL PARAMETERIZATION
+window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const guestName = params.get("to");
+
+    if (guestName) {
+        document.getElementById("nameTerUndang").textContent = decodeURIComponent(guestName);
+    } else {
+        document.getElementById("nameTerUndang").textContent = "Nama Tujuan";
+    }
+};
+
+
+const playAudio = document.getElementById('playAudio');
+const audio = document.getElementById('audioSrc');
+
 //Close modal
 const modal = document.getElementById('modalContainer');
 const buttonClose= document.getElementById('buttonCloseModal');
 const main=document.getElementById('mainContent');
+const footer=document.getElementById('footerMenu');
 
 function toggleDisplay() {
     setTimeout(() => {
         modal.style.display = "none";
         main.style.display = "flex";
+        footer.style.display = "flex";
+        audio.play();     
     }, 200); 
 }
 
 buttonClose.addEventListener('click', toggleDisplay);
-
-
-//Function tamuUdangan
-const namaTamu = "Nama Tamu";
-document.getElementById('nameTerUndang').innerHTML = namaTamu;
 
 // countdown timmer
 const countDownDate = new Date("Nov 15, 2024 10:00:00").getTime();
@@ -111,14 +125,30 @@ document.querySelectorAll('.pop-up').forEach(element => {
 });
 
 
-// URL PARAMETERIZATION
-window.onload = function() {
-    const params = new URLSearchParams(window.location.search);
-    const guestName = params.get("to");
-
-    if (guestName) {
-        document.getElementById("nameTerUndang").textContent = decodeURIComponent(guestName);
+playAudio.addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play(); // Putar audio
+        playAudio.innerHTML = '<i class="fa-regular fa-circle-pause"></i>';
     } else {
-        document.getElementById("nameTerUndang").textContent = "Nama Tujuan";
+        audio.pause(); // Jeda audio
+        playAudio.innerHTML = '<i class="fa-regular fa-circle-play"></i>';
     }
-};
+});
+
+
+const tampilRek =document.getElementById("noRekening");
+const modalRek =document.getElementById("modalGift");
+
+function clickRek(){
+    modalRek.style.display="flex";
+}
+
+function clickOutside(event) {
+    if (event.target === modalRek) {
+        modalRek.style.display = "none";
+    }
+}
+
+tampilRek.addEventListener("click", clickRek);
+
+modalRek.addEventListener("click", clickOutside);

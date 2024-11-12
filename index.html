@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Wedding of Marisa & Nanda</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alice&family=Russo+One&family=Poppins:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f61c99d605.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="modal-container" id="modalContainer">
@@ -29,13 +28,17 @@
 
 
 	<div class="main" id="mainContent">
+		<div class="audio-button">
+    		<button id="playAudio"><i class="fa-regular fa-circle-pause" id="iconAudio"></i></button>
+    		<audio id="audioSrc" src="assets/music/AjengFebria-WisnuJaya-Pujaningsih.mp3" preload="auto"></audio>
+		</div>
 		<div class="section-container">
-			<div class="section-page">
+			<div class="section-page" id="pageOne">
 				<div class="section-column 1"><h2 class="h2-main pop-up">You are Invited to <br>  The Wedding of</h2></div>
-				<div class="section-column 2"><div class="image-container"></div></div>
+				<div class="section-column 2"><div class="image-container pop-up"><img src=""></div></div>
 				<div class="section-column 3"><h2 class="pop-up"><strong>Marisa & Nanda</strong>15-16 November 2024</h2></div>
 				<div class="section-column 4">
-					<div class="countdown-container" class="pop-up">
+					<div class="countdown-container pop-up">
 						<div class="row-time"><span class="timer-target" id="countDays">00</span><span class="title-timer">Hari</span></div>
 						<div class="row-time"><span class="timer-target" id="countHours">00</span><span class="title-timer">Jam</span></div>
 						<div class="row-time"><span class="timer-target" id="countMinute">00</span><span class="title-timer">Menit</span></div>
@@ -45,18 +48,18 @@
 				<div class="section-column 5 pop-up"><p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
 				<p><b>(QS. Ar-Rum : 21)</b></p></div>
 			</div>	
-			<div class="section-page">
+			<div class="section-page" id="pageTwo">
 				<div class="col-page"><p class="pop-up">Dengan memohon rahmat dan ridho dari Allah SWT, kami mengundang Bapak/ Ibu/ Saudara/i untuk hadir di acara pernikahan kami</p></div>
 				<div class="col-page ">
 					<h2 class="pop-up"><strong>Marisa Marga Sapta</strong></h2><p class="pop-up">Putri dari:<br>Bapak Suyoto (alm) & Ibu Wijiati</p>
 					<h2 class="pop-up"><strong class="h2-big">&</strong></h2>
-					<h2 class="pop-up"><strong>Nanda Feri Gunawan</strong></h2><p class="pop-up">Putra dari:<br>Bapak Edi Suwito & Ibu Kristina</p>
+					<h2 class="pop-up"><strong>Nanda Feri Gunawan</strong></h2><p class="pop-up">Putra dari:<br>Bapak Edi Santosa & Ibu Kristina</p>
 				</div>
 				<div class="col-page"></div>
 			</div>
 
 			<!-- section page 3 -->
-			<div class="section-page">
+			<div class="section-page" id="pageThree">
 				<div class="col-page">
 					<span class="span-gap pop-up">Insya&nbsp;Allah<br>Acara akan dilaksanakan pada:</span>
 					<span>
@@ -72,7 +75,7 @@
 					<strong class="pop-up"><i>Akad Nikah</i></strong>
 					<div class="detail-date pop-up">
 						<span><i class="fa-solid fa-calendar-days"></i></i> 15-16 November 2024</span>
-						<span><i class="fa-solid fa-clock"></i></i></i> Pukul: 07:00 WIB</span>
+						<span><i class="fa-solid fa-clock"></i></i></i> Pukul: 13:00 WIB</span>
 					</div>
 					<div class="akad-box pop-up">
 						<span><b>Lokasi Akad Nikah:</b></span>
@@ -98,7 +101,7 @@
 					</span>
 					<strong class="pop-up"><i>Resepsi</i></strong>
 					<div class="resepsi-box pop-up">
-						<span>Sabtu Wage - Akad Kliwon</span>
+						<span>Jumat legi Sabtu paing</span>
 						<span><i class="fa-solid fa-calendar-days"></i></i> 15-16 November 2024</span>
 						<span><i class="fa-solid fa-clock"></i></i></i> Jam: Bebas</span>
 					</div>
@@ -111,7 +114,7 @@
 			</div>
 
 			<!-- section page 4 -->
-			<div class="section-page">
+			<div class="section-page" id="pageFour">
 				<div class="col-page">
 				</div>
 				<div class="col-page">
@@ -124,12 +127,16 @@
 						<iframe src="https://www.google.com/maps?q=-8.008513,112.356372&z=15&output=embed" frameborder="0" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
 					</div>
 					<div class="box-icon pop-up">
-						<div class="map-location-box"><i class="fa-solid fa-location-dot"></i><span>Buka di Maps</span></div>
+						<div class="map-location-box" onclick="window.open('https://www.google.com/maps/dir//-8.0084793,112.3563693/@-8.0087404,112.35599,18z/data=!4m2!4m1!3e9?hl=id&entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+    						<i class="fa-solid fa-location-dot"></i>
+   						 <span>Buka di Maps</span>
+						</div>
+
 					</div>
 				</div>
 				<div class="col-page"></div>
 			</div>
-			<div class="section-page">
+			<div class="section-page" id="pageFive">
 				<div class="container-galery">
 					<h2 class="our-galery pop-up"><strong>Our Galery</strong></h2>
 					<div class="galery-box">
@@ -155,12 +162,12 @@
 					<div class="span-bottom"></div>
 				</div>
 			</div>
-			<div class="section-page">
+			<div class="section-page" id="pageSix">
 				<div class="col-page">
 					<h2 class="pop-up"><strong>Ucapan & Doa</strong></h2>
 						<form class="pop-up">
-							<input class="input-text" type="text" name="" placeholder="namaTamu">
-							<textarea class="input-area" placeholder="Tulis ucapan & doa"></textarea>
+							<input class="input-text" type="text" name="" placeholder="namaTamu" disabled>
+							<textarea class="input-area" placeholder="Tulis ucapan & doa" disabled></textarea>
 							<input class="input-button" type="button" name="" value="Kirim Ucapan">
 						</form>
 						<div class="box-komentar pop-up">
@@ -171,34 +178,45 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-page">
+						<h2><strong>Wedding Gift</strong></h2>
+						<p>Tanpa mengurangi rasa hormat kami, bagi tamu yang ingin mengirim hadiah kepada kedua mempelai dapat mengirimnya melalui:</p>
+						<div class="tampil-gift" id="noRekening" onclick="clickRek()">No. Rekening</div>
+						<div class="tampil-gift" id="noAlamat">Alamat</div>
+					</div>
 				</div>
-				<div class="section-page">
+				<div class="section-page" id="pageSeven">
 					<div class="col-page pop-up"><p>Tiada yang dapat kami ungkapkan selain rasa terima kasih dari hati yang tulus apabila Bapak/ Ibu/ Saudara/i berkenan hadir untuk memberikan do’a restu kepada kami</p></div>
 					<div class="col-page">
 						<div class="closing-thanks pop-up">Hormat Kami</div>
 						<div class="pop-up"><h2><strong>Marisa & Nanda</strong></h2></div>
 					</div>	
 					<div class="col-page">
-						<div class="lihat-detail-wrapper pop-up">
-							<div class="lihat-detail">
-								<h2><strong>Wedding Gift</strong></h2>
-								<p>Kehadiran Anda merupakan sebuah do'a serta rasa syukur bagi kami, namun jika memberi adalah bentuk Do'a & cinta kasih bagi Anda, Anda dapat memberi hadiah dengan link dibawah ini kami akan senang hati menerimanya dan tentu semakin melengkapi kebahagiaan kami.</p>
-								<div class="lihat-detail-button">Geser ke kanan</div>
-							</div>
-						</div>
+							<div class="row-about"></div>
+							<div class="row-pigeon"><i class="fa-solid fa-dove" style="color: #ffffff;"></i></div>
+							<div class="row-about"></div>
 					</div>
 					<div class="col-page">
-						<p>Create By</p>
-						<div class="wa-icon">
-							<i class="fa-brands fa-whatsapp"></i>
-							</i><a href="https://api.whatsapp.com/send/?phone=%2B6285693137301&text&type=phone_number&app_absent=0">wuzz.invitation
-						</div>
+						<h6>Created by foxase</h6>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+<div class="footer-menu" id="footerMenu">
+	<button class="menu-box"><a href="#pageOne"><i class="fa-solid fa-house icon-size"></i></a></button>
+	<button class="menu-box"><a href="#pageTwo"><i class="fa-solid fa-heart icon-size"></i></a></button>
+	<button class="menu-box"><a href="#pageThree"><i class="fa-solid fa-calendar-check icon-size"></i></a></button>
+	<button class="menu-box"><a href="#pageFive"><i class="fa-solid fa-image icon-size"></i></a></button>
+	<button class="menu-box"><a href="#pageFour"><i class="fa-solid fa-location-arrow icon-size"></i></a></button>
+</div>
+<div class="modal-gift" id="modalGift">
+	<div class="gift-content">
+		<img src="assets/images/bank-bri-2.png" width="100px" height="30px" alt="bri">
+		<h6>a.n. Nanda Feri Gunawan</h5>
+		<h5>0000000000000000</h2>
+	</div>
+</div>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
