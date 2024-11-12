@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/marisa-nanda",
+      "destination": "/marisa-nanda/"
+    }
+  ]
+}
